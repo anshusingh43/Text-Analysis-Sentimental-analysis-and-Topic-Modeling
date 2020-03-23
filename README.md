@@ -73,7 +73,7 @@ After few LDA tuning, I found some groups of words like:
 
 In my observation, as we increase k, the number of terms that are unique increases. For example in k=3 we have relationship and people which is not there in k=2. K=4 has sex, school and year which is not in k=3. So the recommended number of topics appropriate for this corpus would be k = 10 or more if you have large dataset.
 
-### Conclusion and Analysis output of their statements
+### Conclusion and Analysis output
 
 I observe that there are certain words representing relation like relationship, parents, child, father and mother. Some are the terms that tells us about their place like school and forum. Some tell their emotions like love, depress, need, life.
 
