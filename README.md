@@ -3,7 +3,7 @@ The data for this project has been collected from psychcentral.com. This website
 
 ### Objective
 
-My aims to identify the most important reasons for mental disorders. Whenever I think of mental disorder one questions pops up in my mind and that is - **Is this something inborn or people tend to suffer from this because of certain reasons or situations they have seen or faced in their lifetime?** Only to find my answers, I get the dataset from the site mentioned above and lets see if we can find out anything interesting!
+My aim is to identify the most important reasons for mental disorders. Whenever I think of mental disorder one questions pops up in my mind and that is - **Is this something inborn or people tend to suffer from this because of certain reasons or situations they have seen or faced in their lifetime?** Only to find my answers, I get the dataset from the site mentioned above and lets see if we can find out anything interesting!
 
 *Here, I will be performing text analytics including creating word clouds, sentiment analysis and topic modeling.*
 
@@ -21,13 +21,13 @@ The dataset has total of 8360 rows containing description of the patients.
 
 Before using our data for analysis, we need to preprocess it. The main goal of pre-processing the text documents is to prepare the text for Text Mining methods. Depending on the type of TM method that we want to deploy, there are different pre-processing steps that we should take to prepare our text data. The main steps include:
 
-- Tokenization: Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens.
+- **Tokenization**: Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens.
 
-- Convert to lower case: After tokenization, we usually need to convert all of the tokens into lower (or upper) case. This way, the software would not assume any difference between “Family” and “family”.
+- **Convert to lower case**: After tokenization, we usually need to convert all of the tokens into lower (or upper) case. This way, the software would not assume any difference between “Family” and “family”.
 
-- Stop-removal method: Another important pre-processing step is to remove stop-words from the text. Each language has its own list of stop-words. A comprehensive list of stop-words for many languages can be found here: http://www.ranks.nl/stopwords. Examples of stop-words include “a”, “an”, and “did”. Stop-words are basically a set of commonly used words in any language, not just English.
+- **Stop-removal method**: Another important pre-processing step is to remove stop-words from the text. Each language has its own list of stop-words. A comprehensive list of stop-words for many languages can be found here: http://www.ranks.nl/stopwords. Examples of stop-words include “a”, “an”, and “did”. Stop-words are basically a set of commonly used words in any language, not just English.
 
-- Stemming and Lemmitization: There are certain words in text like car, car's, cars' which is same but is taken into consderation seperately. Stemming and Lemmitization helps us to group them under one word only.
+- **Stemming and Lemmitization**: There are certain words in text like car, car's, cars' which is same but is taken into consderation seperately. Stemming and Lemmitization helps us to group them under one word only.
 
 ### Let's begin digging into Text analytics
 
@@ -60,6 +60,33 @@ Here, words like love, trust, support, strong, hurt, wrong, pain and afraid are 
 
 
 ### Why did I topic modeling when I already have my words?
+
+In text mining, we often have collections of documents, such as blog posts or news articles, that we’d like to divide into natural groups so that we can understand them separately. Topic modeling is a method for unsupervised classification of such documents, similar to “clustering” on numerical data, which finds natural groups of items even when we’re not sure what we’re looking for.
+
+We are using LDA to determine the words. LDA is a mathematical method for estimating both of these at the same time: finding the mixture of words that are associated with each topic, while also determining the mixture of topics that describes each document. 
+
+Using this, we can group words into different category and see what is responsible for pateints mental behaviour, is it family, friends or work pressure?
+
+After few LDA tuning, I found some groups of words like:
+
+<img width="409" alt="lda" src="https://user-images.githubusercontent.com/13045656/77367233-19630900-6d30-11ea-94ca-22de3a199b3b.PNG">
+
+In my observation, as we increase k, the number of terms that are unique increases. For example in k=3 we have relationship and people which is not there in k=2. K=4 has sex, school and year which is not in k=3. So the recommended number of topics appropriate for this corpus would be k = 10 or more if you have large dataset.
+
+### Conclusion and Analysis output of their statements
+
+I observe that there are certain words representing relation like relationship, parents, child, father and mother. Some are the terms that tells us about their place like school and forum. Some tell their emotions like love, depress, need, life.
+
+So from these words, I can say that they are mainly affected by their relationships and may be they need a good one in their life ( we have words like good, relationshiop, need, life ). The society and the place where they live and go may have contributed in their feelings. 
+
+Overall, they might not be happy with the place they live or go and the relationship they share with either their family or friends . They may lack love and care which might be one of the reason for mental disorders in the society.
+
+I am uploading the code. All you have to do is to download it and open it in RStudio or similar IDE.
+
+
+
+
+
 
 
 
