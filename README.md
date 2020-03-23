@@ -59,7 +59,7 @@ Words like scared, hate, depressed, wrong and bad are very common among people w
 Here, words like love, trust, support, strong, hurt, wrong, pain and afraid are clear.
 
 
-### Why did I topic modeling when I already have my words?
+### Why did I use topic modeling when I already have my words?
 
 In text mining, we often have collections of documents, such as blog posts or news articles, that we’d like to divide into natural groups so that we can understand them separately. Topic modeling is a method for unsupervised classification of such documents, similar to “clustering” on numerical data, which finds natural groups of items even when we’re not sure what we’re looking for.
 
