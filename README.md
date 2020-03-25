@@ -3,7 +3,7 @@ The data for this project has been collected from psychcentral.com. This website
 
 ### Objective
 
-My aim is to identify the most important reasons for mental disorders. Whenever I think of mental disorder one questions pops up in my mind and that is - **Is this something inborn from their birth or people tend to suffer from this because of certain reasons or situations they have seen or faced in their lifetime?** Only to find my answers, I get the dataset from the site mentioned above and lets see if we can find out anything interesting!
+My aim is to identify the most important reasons for mental disorders. Whenever I think of mental disorder one questions pops up in my mind and that is - **Is this something from their birth or people tend to suffer from this because of certain reasons or situations they have seen or faced in their lifetime?** Only to find my answers, I get the dataset from the site mentioned above and lets see if we can find out anything interesting!
 
 *Here, I will be performing text analytics including creating word clouds, sentiment analysis and topic modeling.*
 
