@@ -13,6 +13,8 @@ I am using RStudios as my IDE and I load my dataset and find the number of colum
 - q_content
 - answers
 
+Here the first column is rows which is basically index starting from 1, 2 and so on. Second column is q_subject containing headline that the individual (with the mental stress) has written which is short but descriptive. Third column contains more brief information and details regarding the second column and last column is the reply on the individual.
+
 <img width="568" alt="img1" src="https://user-images.githubusercontent.com/13045656/77357261-3a226300-6d1e-11ea-8635-9cd5d5657e5c.PNG">
 
 The dataset has total of 8360 rows containing description of the patients. 
