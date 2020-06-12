@@ -1,6 +1,7 @@
 # Text Analysis, Sentimental analysis and Topic Modeling
 The data for this project has been collected from psychcentral.com. This website offers an online forum for posting questions and answers related to mental health. Please visit https://forums.psychcentral.com for more information. 
 
+Check my final PDF for full code and visualization.
 ### Objective
 
 My aim is to identify the most important reasons for mental disorders. Whenever I think of mental disorder one questions pops up in my mind and that is - **Is this something from their birth or people tend to suffer from this because of certain reasons or situations they have seen or faced in their lifetime?** Only to find my answers, I get the dataset from the site mentioned above and lets see if we can find out anything interesting!
