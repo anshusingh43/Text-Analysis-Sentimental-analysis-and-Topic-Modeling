@@ -86,6 +86,8 @@ Overall, they might not be happy with the place they live or go and the relation
 
 I am uploading the code. All you have to do is to download it and open it in RStudio or similar IDE.
 
+Also, I have uploaded the pdf version of my code for a more visualization perspective.
+
 
 
 
